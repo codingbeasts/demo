@@ -1,0 +1,600 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+  font-size: 10px;
+}
+ul{
+  list-style: none;
+}
+input{
+    color: #3d2514;
+}
+.wrapper{
+  position: relative;
+}
+.inner-container{
+  width:36rem;
+  margin: 0 auto;
+}
+.navbar{
+  background: transparent;
+  color: #3d2514;
+  position: relative;
+}
+.nav-title-bar{
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.material-icons{
+  cursor: pointer;
+}
+.showMenu{
+
+}
+
+.show-nav-links{
+  right: 0 !important;
+}
+.navbar img{
+  width: 20rem;
+}
+.nav-links{
+  width: 100%;
+  top: 0;
+  height: 100vh;
+  position: fixed;
+  transition: all 650ms ease-in-out;
+  background-color: rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  right: -60rem;
+  text-transform: uppercase;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  backdrop-filter: blur(20px);
+}
+.nav-links li{
+  cursor: pointer;
+}
+.hideMenu{
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+}
+.burger-banner{
+  background: url("../images/Rectangle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+  height: auto;
+  color: #3d2514;
+}
+
+.banner-week{
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 5rem;
+  align-items: center;
+  height: 600px;
+  justify-content: center;
+}
+.banner-week span:first-child{
+  display: inline-block;
+  padding: 1rem;
+  font-size: 2rem;
+  border: 2px dashed #3d2514;
+  text-align: center;
+}
+.banner-week h2{
+  font-size: 5rem;
+  text-shadow: 2px 2px white;
+}
+.banner-week span:last-child{
+  font-size: 3.2rem;
+  text-shadow: 2px 2px white;
+  font-weight: 800;
+
+}
+.burger-week img{
+  display: block;
+  margin: 0 auto;
+  width: 35rem;
+  height: 35rem;
+}
+.try-it{
+  padding: 5rem 0;
+  text-align: center;
+}
+.try-it [class*="try-"]{
+  height: 19rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 1.8rem 8px rgba(0, 0, 0, 0.7);
+  text-align: left;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding:1rem 0 0 1rem;
+}
+.try-it [class*="try-"] span:first-child{
+  font-size: 1.5rem;
+  display: block;
+}
+.try-it [class*="try-"] span:last-child{
+  display: block;
+  font-size: 2.4rem;
+}
+.try-two span:last-child{
+  width: 50%;
+}
+.try-one{
+  background: url("../images/try-one.png");
+}
+.try-two{
+  background: url("../images/try-two.png");
+}
+.try-three{
+  background: url("../images/try-three.png");
+}
+.try-it input[type="button"]{
+  background: rgba(255,192,69,1);
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  border: none;
+  border-radius:2px;
+  text-transform: uppercase;
+  color: #3d2514;
+  font-weight: 500;
+  cursor: pointer;
+}
+.choose{
+  color:#3d2514;
+}
+.choose .inner-container{
+  margin: 3rem auto;
+}
+.choose-info{
+  text-align: center;
+}
+.choose-info span{
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.choose-info p{
+  font-size: 1.8rem;
+  width: 90%;
+  margin: 2rem auto;
+}
+.choose ul{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap:4rem;
+}
+.choose ul span{
+  font-weight: bold;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+.choose ul p{
+  width: 70%;
+  margin: 2rem auto;
+  font-size: 1.8rem;
+}
+.choose img{
+  display: block;
+  margin: 2rem auto;
+  width: 35rem;
+}
+.choose ul input[type="button"]{
+  background: rgba(191,34,34,1);
+  border: none;
+  padding: 1rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.discover-slider{
+  color: #3d2514;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem auto;
+  padding: 3rem 0;
+  box-shadow: 1px 15px 3rem 8px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+.discover-slider li{
+  text-align: center;
+}
+.discover-slider span{
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 2rem;
+}
+.discover-slider span:first-child{
+  font-size: 2rem;
+}
+.discover-slider span+span{
+  font-size: 3rem;
+}
+.discover-slider p{
+  font-size: 1.8rem;
+  text-align: justify;
+  padding: 2rem;
+}
+.dots {
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.active{
+  background-color: rgba(255, 192, 69, 1) !important;
+}
+.dots li{
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #dcdcdc;
+  border-radius: 50%;
+  box-shadow: 1px 1px 6px 0.8px rgba(0, 0, 0, 0.4);
+  cursor:pointer;
+  content: "";
+  transition: 0.5s;
+}
+.discover img{
+  width: 35rem;
+  box-shadow: 1px 1px 1.2rem 1.4px rgba(0, 0, 0, 0.7);
+  border-radius: 2px;
+}
+.booking{
+  padding: 15rem 0;
+  text-align: center;
+  color: #3d2514;
+  text-transform: uppercase;
+  position: relative;
+}
+.booking span{
+  display: block;
+  margin-bottom: 2rem;
+}
+.booking span:first-child{
+  font-size:2.4rem;
+  font-weight: lighter;
+}
+.booking span+span{
+  font-size:3rem;
+  font-weight: bolder;
+}
+.reservation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 40rem;
+}
+.reservation input[type*="text"]{
+  padding: 1.5rem 1rem;
+}
+.reservation input[type="button"]{
+  background: rgba(191, 34, 34, 1);
+  padding: 1.2rem 6rem;
+  border: none;
+  border-radius:4px;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.booking img{
+  position: absolute;
+  z-index: -1;
+}
+img[alt="Booking"]{
+  width: 50%;
+  top: 0;
+  left: 0;
+}
+img[alt="Bottle"]{
+  width: 50%;
+  top: 35%;
+  left: -4rem;
+}
+img[alt="plate"]{
+  width: 50%;
+}
+.footer{
+  background: url("../images/footer-bg.png");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: local;
+  padding: 2rem;
+  color: white;
+}
+.footer ul{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  align-items:center;
+  justify-items: center;
+}
+img[alt="footer-logo"]{
+  width: 60%;
+  margin: 2rem 0;
+}
+.footer p{
+  font-size:1.4rem;
+}
+.footer li:nth-child(2) span{
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.footer span > img{
+  margin-right: 2rem;
+}
+.footer li:nth-child(3) span{
+  font-size: 1.4rem;
+}
+.footer li:nth-child(4){
+  display: flex;
+  gap: 1rem;
+}
+.inner-container .footer{
+  margin: 5rem 0;
+  border-radius: 0.5rem;
+}
+/* media query for 720p screen desktop, laptop and tablet */
+@media screen and (min-width:767px) {
+  .inner-container{
+    width: 96%;
+  }
+  .navbar{
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    width: 100%;
+  }
+  .navbar .inner-container{
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+  }
+  .nav-title-bar{
+    display: initial;
+    position: unset;
+  }
+  .showMenu{
+    display: none;
+  }
+  .hideMenu{
+    display: none;
+  }
+  .nav-links{
+    width: 100%;
+    height: auto;
+    position: unset;
+    flex-direction: row;
+    transition: none;
+    background: transparent;
+    backdrop-filter:initial;
+    justify-content: space-around;
+    font-size: 1.5rem;
+  }
+  .burger-banner .inner-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 5rem;
+  }
+  .banner-week{
+    height: 700px;
+  }
+  .burger-week{
+
+  }
+  .burger-week img{
+    width: 50rem;
+    height: 50rem;
+  }
+  .banner-week h2{
+    font-size: 4rem;
+  }
+  .try-it .inner-container{
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    justify-items:center;
+  }
+  .try-it [class*="try-"]{
+    margin: 0;
+    width: 35.6rem;
+    height: auto;
+  }
+  .try-one{
+    grid-row: 1/3;
+    height: 42rem !important;
+  }
+  .try-it input[type="button"]{
+    position: absolute;
+    top: 110%;
+  }
+  .choose .inner-container{
+    margin: 10rem auto;
+  }
+  .choose ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .choose img{
+    height: 16rem;
+    width: 22rem;
+    margin: 6rem auto;
+  }
+  .choose ul p{
+    width: 80%;
+  }
+  .discover-slider{
+    padding: 10rem 0;
+    width: 70rem;
+  }
+  .discover-slider img{
+    width: 65rem;
+  }
+  img[alt="footer-logo"]{
+    width: 35%;
+  }
+}
+@media screen and (min-width:767px) and (max-width:1365px) {
+
+}
+/* for 1080p and above */
+@media screen and (min-width:1365px){
+  .burger-week img{
+    width: 105rem;
+    height: 105rem;
+  }
+  .banner-week{
+    height: 1000px;
+    align-items: start;
+  }
+  .banner-week span:first-child{
+    font-size: 4rem;
+  }
+  .banner-week h2{
+    font-size: 10rem;
+  }
+  .banner-week span:last-child{
+    font-size: 6rem;
+  }
+  .try-it [class*="try-"]{
+    padding: 5rem 0 0 5rem;
+    width: 90.6rem;
+    height: auto;
+  }
+  .try-one{
+    height: 84rem !important;
+  }
+  .try-it [class*="try-"] span:first-child{
+    font-size: 3rem;
+  }
+  .try-it [class*="try-"] span:last-child{
+    font-size: 5rem;
+  }
+  .try-it input[type="button"]{
+    font-size: 2rem;
+  }
+  .choose .inner-container{
+    margin: 20rem auto;
+  }
+  .choose-info span{
+    font-size: 5rem;
+  }
+  .choose img{
+    width: 45rem;
+    height: 32rem;
+  }
+  .discover-slider{
+    width: 97%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .discover-slider p{
+    width: 65%;
+    margin: 0 auto;
+  }
+  .discover-slider img{
+    height: 50rem;
+  }
+  .booking span:first-child{
+    font-size:4rem;
+  }
+  .booking span+span{
+    font-size:6rem;
+  }
+  .reservation{
+    display: grid;
+    grid-template-columns: 10% 10%;
+    grid-template-rows: 10% 10% 10%;
+    align-items: center;
+    justify-content: center;
+    grid-column-gap:22rem;
+    grid-row-gap: 2rem;
+  }
+  .reservation input{
+    width: 38.5rem;
+  }
+  img[alt="Booking"]{
+    width: 20%;
+  }
+  img[alt="Bottle"]{
+    width: 10%;
+    top: 30%;
+    left: 25%;
+  }
+  img[alt="plate"]{
+    width: 20%;
+    right: 0;
+    top: 50%;
+  }
+  .footer ul{
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30% 30% 30%;
+  }
+  .footer li{
+    padding:3rem;
+  }
+  .footer p{
+    font-size: 2.2rem;
+  }
+  .footer li:nth-child(1) {
+    text-align: left;
+    width: 70%;
+  }
+  .footer li:nth-child(2) span{
+    font-size: 1.5rem;
+  }
+  .footer li:nth-child(3) span{
+    font-size: 2rem;
+
+  }
+  img[alt="footer-logo"]{
+    width: 60%;
+  }
+  .inner-container .footer{
+    margin-bottom: 5rem;
+  }
+}
