@@ -385,6 +385,9 @@ img[alt="footer-logo"]{
     left: 0;
     width: 100%;
   }
+  .navbar img{
+    width: 26rem;
+  }
   .navbar .inner-container{
     padding: 0 2rem;
     display: flex;
@@ -408,8 +411,8 @@ img[alt="footer-logo"]{
     transition: none;
     background: transparent;
     backdrop-filter:initial;
-    justify-content: space-around;
-    font-size: 1.5rem;
+    justify-content: space-between;
+    font-size: 1.6rem;
   }
   .burger-banner .inner-container{
     display: grid;
@@ -419,6 +422,9 @@ img[alt="footer-logo"]{
   }
   .banner-week{
     height: 700px;
+  }
+  .banner-week span:first-child{
+    width: 145%;
   }
   .burger-week{
 
@@ -483,6 +489,12 @@ img[alt="footer-logo"]{
 }
 /* for 1080p and above */
 @media screen and (min-width:1365px){
+  .navbar img{
+    width: 33rem;
+  }
+  .nav-links{
+    font-size: 1.8rem;
+  }
   .burger-week img{
     width: 105rem;
     height: 105rem;
@@ -493,6 +505,7 @@ img[alt="footer-logo"]{
   }
   .banner-week span:first-child{
     font-size: 4rem;
+    width: 120%;
   }
   .banner-week h2{
     font-size: 10rem;
