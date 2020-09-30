@@ -447,7 +447,7 @@ img[alt="footer-logo"]{
   }
   .try-it [class*="try-"]{
     margin: 0;
-    width: 35.6rem;
+    width: 47vw;
     height: auto;
   }
   .try-one{
@@ -475,7 +475,6 @@ img[alt="footer-logo"]{
   }
   .discover-slider{
     padding: 10rem 0;
-    width: 70rem;
   }
   .discover-slider img{
     width: 65rem;
@@ -484,11 +483,17 @@ img[alt="footer-logo"]{
     width: 35%;
   }
 }
-@media screen and (min-width:767px) and (max-width:1365px) {
-
+@media screen and (min-width:769px) and (max-width:1366px) {
+  .burger-banner .inner-container{
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+  }
+  .reservation{
+    grid-template-columns: 10% 20%;
+  }
 }
 /* for 1080p and above */
-@media screen and (min-width:1365px){
+@media screen and (min-width:1367px){
   .navbar img{
     width: 33rem;
   }
@@ -515,7 +520,6 @@ img[alt="footer-logo"]{
   }
   .try-it [class*="try-"]{
     padding: 5rem 0 0 5rem;
-    width: 90.6rem;
     height: auto;
   }
   .try-one{
@@ -541,7 +545,6 @@ img[alt="footer-logo"]{
     height: 32rem;
   }
   .discover-slider{
-    width: 97%;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -560,7 +563,7 @@ img[alt="footer-logo"]{
   }
   .reservation{
     display: grid;
-    grid-template-columns: 10% 10%;
+    grid-template-columns: 10% 20%;
     grid-template-rows: 10% 10% 10%;
     align-items: center;
     justify-content: center;
